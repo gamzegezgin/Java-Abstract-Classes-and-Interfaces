@@ -1,3 +1,4 @@
+package Shape;
 public class Square extends Quadrilateral{
     private int a;
 
@@ -12,6 +13,7 @@ public class Square extends Quadrilateral{
     }
 
     //draw override edelim ve boylece abstract kalkar
+    @Override
     public void draw(){
         System.out.println("Drew a square.");
     
