@@ -2,8 +2,8 @@ package Instrument;
 
 public class Main {
     public static void main(String[] args) {
-        Guitar guitar = new Guitar("My guitar",6);
-        Flute flute = new Flute("My flute");
+        Guitar guitar = new Guitar("Guitarella",6);
+        Flute flute = new Flute("Flutella");
  
         guitar.play();
         flute.play();
