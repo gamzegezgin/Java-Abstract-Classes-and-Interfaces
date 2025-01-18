@@ -36,6 +36,7 @@ public abstract class Employee {
         return ssn;
     }
 
+    @Override
     //sout(employee) dedigimizde düzgün çıktı almamızı sağlar
     public String toString(){
         return String.format("%s %s\nsocial security number: %s",
@@ -43,7 +44,7 @@ public abstract class Employee {
     }
 
     //subclasslara aktarmak ve orada override etmek için abstract metod tanımladık
-    public abstract double earning();
+    public abstract double earnings();
 
 
 }
