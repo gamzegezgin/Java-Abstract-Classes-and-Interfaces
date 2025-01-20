@@ -9,7 +9,7 @@ public class PayableInterfaceTest {
         payableObjects[2] = new SalariedEmployee("John", "Smith","111-11-1111", 800.00);
         payableObjects[3] = new SalariedEmployee("Lisa","Barnes", "888-88-888",1200.00);
 
-        System.out.println("İnvoice and Employees processed polymorphically: \n");
+        System.out.println("Invoice and Employees processed polymorphically: \n");
 
         for(Payable currentPayable: payableObjects){
             System.out.printf("%s\n%s: $%, .2f\n\n", currentPayable.toString(), "payment due", currentPayable.getPaymentAmount());

@@ -17,10 +17,12 @@ public class BasePlusCommissionEmployee extends ComissionEmployee {
         return baseSalary;
     }
 
+    @Override
     public double earnings(){
         return getBaseSalary() + super.earnings();
     }
 
+    @Override
     public String toString(){
         return String.format("%s %s; %s: $%, .2f", "base salaried", super.toString(), "base salary", getBaseSalary());
     }

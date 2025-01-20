@@ -26,10 +26,12 @@ public class ComissionEmployee extends Employee {
         return comissionRate;
     }
 
+    @Override
     public double earnings(){
         return getComissionRate()*getGrossSales();
     }
 
+    @Override
     public String toString(){
         return String.format("%s: %s\n%s: $%, .2f; %s: %.2f", "comission employee", super.toString(), "gross sales", getGrossSales(), "comission rate", getComissionRate());
     }
